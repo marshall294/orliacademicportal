@@ -357,14 +357,14 @@ document.getElementById("welcomeMessage").innerHTML = `
                     console.error("Error fetching user data from Firestore: ", error);
                 });
             } else {
-                window.location.href = "index.html";
+                window.location.href = "/index";
             }
         });
 
         function getResourceLink(userClass) {
             switch (userClass) {
                 case "Year 1":
-                    return "/year1-t.html";
+                    return "/year1-t";
                 case "Year 2":
                     return "/year2-t";
                 case "Year 3":
@@ -382,7 +382,7 @@ document.getElementById("welcomeMessage").innerHTML = `
 
         window.logoutUser = function logoutUser() {
             signOut(auth).then(() => {
-                window.location.href = "index.html";
+                window.location.href = "/index";
             }).catch((error) => {
                 console.error("Error logging out: ", error);
             });
@@ -400,7 +400,7 @@ document.getElementById("welcomeMessage").innerHTML = `
         <div class="school-name">Orli International Academy</div>
         <!-- Navigation Links -->
         <div class="nav">
-            <a href="index.html">Home</a>
+            <a href="/index">Home</a>
         </div>
     </div>
     <!-- Dashboard container -->
