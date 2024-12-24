@@ -262,7 +262,7 @@
 
     window.logout = function logout() {
         signOut(auth).then(() => {
-            window.location.replace('index.html');
+            window.location.replace('/index');
         }).catch((error) => {
             console.error("Error during sign-out: ", error);
         });
@@ -458,7 +458,7 @@
         <div class="school-name">Orli International Academy</div>
         <!-- Navigation Links -->
         <div class="nav">
-            <a href="index.html">Home</a>
+            <a href="/index">Home</a>
         </div>
     </div>
     <div class="admin-container">
