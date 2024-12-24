@@ -361,7 +361,7 @@ document.getElementById("welcomeMessage").innerHTML = `
                     console.error("Error fetching user data from Firestore: ", error);
                 });
             } else {
-                window.location.href = "index.html";
+                window.location.href = "/index";
             }
         });
 
@@ -370,22 +370,22 @@ document.getElementById("welcomeMessage").innerHTML = `
 
             switch(userClass) {
                 case "Year 1":
-                    resourceLink = "year1-s.html";
+                    resourceLink = "/year1-s";
                     break;
                 case "Year 2":
-                    resourceLink = "year2-s.html";
+                    resourceLink = "/year2-s";
                     break;
                 case "Year 3":
-                    resourceLink = "year3-s.html";
+                    resourceLink = "/year3-s";
                     break;
                 case "Year 4":
-                    resourceLink = "year4-s.html";
+                    resourceLink = "/year4-s";
                     break;
                 case "Year 5":
-                    resourceLink = "year5-s.html";
+                    resourceLink = "/year5-s";
                     break;
                 case "Year 6":
-                    resourceLink = "year-s.html";
+                    resourceLink = "/year-s";
                     break;
                 default:
                     resourceLink = "https://www.example.com/default-resources";
@@ -396,7 +396,7 @@ document.getElementById("welcomeMessage").innerHTML = `
 
         window.logoutUser = function logoutUser() {
             signOut(auth).then(() => {
-                window.location.href = "index.html";
+                window.location.href = "/index";
             }).catch((error) => {
                 console.error("Error logging out: ", error);
             });
@@ -414,7 +414,7 @@ document.getElementById("welcomeMessage").innerHTML = `
         <div class="school-name">Orli International Academy</div>
         <!-- Navigation Links -->
         <div class="nav">
-            <a href="index.html">Home</a>
+            <a href="/index">Home</a>
         </div>
     </div>
 
